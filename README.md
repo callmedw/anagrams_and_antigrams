@@ -1,7 +1,7 @@
 # Anagrams and Antigrams
+## (https://github.com/callmedw/anagrams_and_antigrams.git)
 
 #### Find out if any two words are antigrams or anagrams!
-## (https://github.com/callmedw/anagrams_and_antigrams.git)
 
 #### By Dana Weiss under the watchful eye of EpicodusPDX
 
@@ -14,7 +14,7 @@ _This application will allow a user to ascertain whether two words are anagrams 
 | behavior |  input   |  output  |
 |----------|:--------:|:--------:|
 | First the program will check to make sure the inputs are words | "HEOLPY" | This is not a real word, please put in an actual word." |
-| Program will check two inputted words to se if they are antagrams | "admirer" and "married" | "These words are anagrams!" |
+| Program will check two inputted words to se if they are antigrams | "admirer" and "married" | "These words are anagrams!" |
 | Program will not be case sensitive. | "Afield" & "failed" | "These words are anagrams!" |
 | If the words are anagrams the program will then check to see if the words are also palindromes. | "civic" & "kayak" | "These words are palindromes, too!" |
 | If the words are not anagrams the program will then check to see if the words are antigrams. | "hike" & "art" | "These words are not anagrams, but they are antigrams!" |
