@@ -27,3 +27,11 @@ class String
     end
   end
 end
+
+define_method(:is_palindrome) do |input_2|
+  if (self.reverse == self) && (input_2.reverse == input_2)
+    'these words are palindromes.'
+  else
+    'these words are not palindromes.'
+  end
+end
