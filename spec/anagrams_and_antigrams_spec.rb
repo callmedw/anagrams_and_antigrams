@@ -1,8 +1,10 @@
 require('rspec')
 require('anagrams_and_antigrams.rb')
 
-describe('String#word_test') do
-  it ('takes user input of two words and makes sure they are words') do
-    expect('spring').word_test('equinox').to(eq('these are words'))
-  end
+
+describe ('String#is_word') do
+
+  it("Takes an input and determines if it is word") do
+      expect('word'.is_word()).to(eq('word'.split("")))
+    end
 end
