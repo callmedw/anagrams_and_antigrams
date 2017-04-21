@@ -15,6 +15,12 @@ end
 
 describe ('String#is_palindrome') do
   it("Takes an input and determines if it is a palindrome") do
-    expect('dad'.is_palindrome('dad')).to(eq('these words are palindromes.'))
+    expect('dad'.is_palindrome('roger')).to(eq('these words are not palindromes.'))
+  end
+end
+
+describe ('String#is_antigram') do
+  it("Takes an input and determines if it is a antigram") do
+    expect('dad'.is_antigram('roger')).to(eq(false))
   end
 end

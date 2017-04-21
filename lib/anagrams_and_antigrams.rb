@@ -28,10 +28,26 @@ class String
   end
 end
 
-define_method(:is_palindrome) do |input_2|
-  if (self.reverse == self) && (input_2.reverse == input_2)
-    'these words are palindromes.'
-  else
-    'these words are not palindromes.'
+class String
+  define_method(:is_palindrome) do |input_2|
+    if (self.reverse == self) && (input_2.reverse == input_2)
+      'these words are palindromes.'
+    else
+      'these words are not palindromes.'
+    end
+  end
+end
+
+class String
+  define_method(:is_antigram) do |input_2|
+    result = false
+    first_word = self.downcase().split("")
+    second_word = input_2.downcase.split("")
+    first_word.each() do |letter|
+      if second_word.include?(letter)
+        result = true
+      end
+    end
+    result
   end
 end
