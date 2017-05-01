@@ -44,17 +44,17 @@ class String
 
   define_method(:pass_the_test) do |input_2|
     result = 'blerg!'
-    first_string = self.gsub!(/[^0-9A-Za-z]/, '')
-    second_string = input_2.gsub!(/[^0-9A-Za-z]/, '')
-    if first_string.is_word?() == true && second_string.is_word?() == true
-      if first_string.is_anagram?(second_string) == true
-        if first_string.is_palindrome? == true && second_string.is_palindrome? == true
+    first_input = self.gsub!(/[^0-9A-Za-z]/, '')
+    second_input = input_2.gsub!(/[^0-9A-Za-z]/, '')
+    if first_input.is_word?() == true && second_input.is_word?() == true
+      if first_input.is_anagram?(second_input) == true
+        if first_input.is_palindrome? == true && second_input.is_palindrome? == true
           result = "These words are anagrams AND palindromes!"
         else
           result = "These are anagrams, but they are not palindromes."
         end
       else
-        if first_string.is_antigram?(second_string) == true
+        if first_input.is_antigram?(second_input) == true
           result = "These are not anagrams, but they are ANTIgrams!"
         else
           result = "These appear to be words, but they are not anagrams or antigrams."

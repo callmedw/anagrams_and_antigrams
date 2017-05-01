@@ -1,3 +1,6 @@
-source "https://rubygems.org"
+source 'https://rubygems.org'
 
-require('rspec')
+require'rspec'
+gem 'sinatra'
+gem 'sinatra-contrib'
+gem 'pry'
