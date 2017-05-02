@@ -11,5 +11,6 @@ end
 get ('/success') do
   @first_input = params.fetch('first_input')
   @second_input = params.fetch('second_input')
+  @output = @first_input.run_all_methods(@second_input)
   erb(:success)
 end

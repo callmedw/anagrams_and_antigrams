@@ -23,13 +23,13 @@ describe('String') do
 
   describe ('#is_antigram?') do
     it("Takes an input and determines if it is a antigram") do
-      expect('dad'.is_antigram?('roger')).to(eq(false))
+      expect('dad'.is_antigram?('roger')).to(eq(true))
     end
   end
 
-  describe ('#pass_the_test') do
+  describe ('#run_all_methods') do
     it("Takes two inputs of any length to determine four factors: is it a word, is it an anagram, is it a palindrome, and is it an anitgram") do
-      expect('Web Developer'.pass_the_test('Rebel Deep Vow')).to(eq("These are anagrams, but they are not palindromes."))
+      expect('Web Developer'.run_all_methods('Rebel Deep Vow')).to(eq("These are anagrams, but they are not palindromes."))
     end
   end
 end

@@ -34,18 +34,16 @@ class String
     result = false
     first_word = self.downcase().split("")
     second_word = input_2.downcase.split("")
-    first_word.each() do |letter|
-      if second_word.include?(letter)
-        result = true
-      end
+    if (second_word & first_word).empty?
+      result = true
     end
     result
   end
 
-  define_method(:pass_the_test) do |input_2|
+  define_method(:run_all_methods) do |input_2|
     result = 'blerg!'
-    first_input = self.gsub!(/[^0-9A-Za-z]/, '')
-    second_input = input_2.gsub!(/[^0-9A-Za-z]/, '')
+    first_input = self.gsub(/[^0-9A-Za-z]/, '')
+    second_input = input_2.gsub(/[^0-9A-Za-z]/, '')
     if first_input.is_word?() == true && second_input.is_word?() == true
       if first_input.is_anagram?(second_input) == true
         if first_input.is_palindrome? == true && second_input.is_palindrome? == true
